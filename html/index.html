@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quản lí học viên</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quản lý học viên</h1>
+
+    <h2>Thông tin học viên</h2>
+    <form id="studentForm">
+        <label for="name">Tên học viên:</label>
+        <input type="text" id="name" required>
+        <span class="error" id="nameError"></span><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" required>
+        <span class="error" id="emailError"></span><br>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" required>
+        <span class="error" id="phoneError"></span><br>
+
+        <label for="homeTown">Quê quán:</label>
+        <input type="text" id="homeTown" required>
+        <span class="error" id="homeTownError"></span><br>
+
+        <div>
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" required>Nam
+            <input type="radio" id="female" name="gender" required>Nữ
+            <span class="error" id="genderError"></span>
+        </div>
+
+        <button type="button" id="saveButton">Lưu</button>
+    </form>
+
+    <h2>Danh sách học viên</h2>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="studentList">
+            <!-- Dữ liệu học viên sẽ được hiển thị ở đây -->
+        </tbody>
+    </table>
+
+
+    <script src="../js/js.js"></script>
+</body>
+
+
+</html>
